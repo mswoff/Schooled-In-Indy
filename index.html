@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Schooled in Indy- Home</title>
+	<meta charset="utf-8">
+	<link href="schooled.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+
+		<h1 id="logo"><a href="index.html">Schooled in Indy</a></h1>
+
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="josefa.html">Josefa Beyer</a></li>
+			<li><a href="archive.html">Archive</a></li>
+			<li><a href="involved.html">Get Involved and Contact</a></li>
+		</ul>
+	</nav>
+	<div id="pageheading">
+		<h2>Talking about ourselves, others, and the American institution that tries to bring us together</h2>
+	</div>
+		<div id="sidebar">
+		<div id="box1">
+			<h3>Lorem ipsum</h3>
+			<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div id="box2">
+			<a href="excerpt.html">Read Excerpt</a>
+		</div>
+	</div>
+	<main>
+
+		<img src="schooledCover.png" alt="Schooled in Indy Book Cover" height="257" width="175">
+		<h2>About the Book</h2>
+		<p>Schooled in Indianapolis tells the story of various students from different eras. It includes people of all ethnicities and socioeconomic background. The book tries to showcase the experience felt by Indianapolis students through the use of first person accounts.</p>
+		<br>
+		
+
+		<h2>Buy the Book</h2>
+		<span id="countdown"></span>
+		<br>
+		<div id="buy">
+			<a href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=schooled+in+indy"><img src="amazon.png" alt="Amazon"></a>
+			<a href="http://www.barnesandnoble.com/w/indys-adventures-lindsay-kent/1100752393?ean=9780606069359"><img src="borders.jpeg" alt="Borders"></a>
+			<a href="http://www.storelocator.com"><img src="button-storelocator.jpg" alt="Store Locator"></a>
+		</div>
+		<h2><a href="https://www.google.com/?gws_rd=ssl#tbm=nws&q=schooled+in+indy+book" id="news">In the News</a></h2>
+		<script>
+			var target_date = new Date("Jan 1, 2016").getTime();
+			var days, hours, minutes, seconds;	
+			var countdown = document.getElementById("countdown");
+ 
+			setInterval(function () {
+    			var current_date = new Date().getTime();
+    			var seconds_left = (target_date - current_date) / 1000;
+    			
+    			days = parseInt(seconds_left / 86400);
+    			seconds_left = seconds_left % 86400;
+     
+    			hours = parseInt(seconds_left / 3600);
+    			seconds_left = seconds_left % 3600;
+     
+       			countdown.innerHTML = days + " days until the book is released!! (this counts down to January first)"
+ 
+			}, 1000);
+		
+		
+		
+		
+		
+			document.getElementById("news").onmouseover = function() {mouseOver()};
+			document.getElementById("news").onmouseout = function() {mouseOut()};
+
+			function mouseOver() {
+    			document.getElementById("news").style.opacity = "0.6";
+			}
+
+			function mouseOut() {
+    			document.getElementById("news").style.opacity = "1.0";
+			}
+		</script>
+
+		<ul>
+			<li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit" - Indianapolis Star</li>
+			<li>"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" - New York Times</li>
+		</ul>
+	</main>
+
+	<footer>
+		Copyright &copy; 2016 Schooled in Indy<br>
+		<a href="mailto:josefa_beyer@sbcglobal.net">josefa_beyer@sbcglobal.net</a>
+	</footer>
+	</div>
+</body>
+</html>
